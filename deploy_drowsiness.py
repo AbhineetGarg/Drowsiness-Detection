@@ -76,7 +76,7 @@ face_model = face_mesh.FaceMesh(static_image_mode=False, max_num_faces=1,
 # capture = cv2.VideoCapture(vid_files[int(arg)])
 def gen_frames():
     min_tolerance = 3.6
-    image = cv2.imread("C:/Users/Abhineet/Documents/DS 360 DigiTMG/Drowsiness Detection Project_Feb-22/Drowsiness Input Output/Input/Yawning.jpg")
+    image = cv2.imread("<image path>")
     image_rgb = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
     outputs = face_model.process(image_rgb)
     if outputs.multi_face_landmarks:
